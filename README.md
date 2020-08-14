@@ -35,4 +35,9 @@ Original file is [here](https://playground.arduino.cc/Main/I2cScanner/)
 
 3. Upload and check the behavior on the serial monitor
 
+| M5Camera | Arduino M0 PRO |
+| --- | --- |
+| [I2C_Main.ino](I2C_Main/I2C_Main.ino) | [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) |
+| [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) | [I2C_Main.ino](I2C_Main/I2C_Main.ino) |
+
 <img src="README/I2C_Code.png" width="600">
