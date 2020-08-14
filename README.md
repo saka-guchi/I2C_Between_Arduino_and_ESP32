@@ -3,6 +3,20 @@ I2C communication between Arduino and ESP32 (ex. M5Camera).
 
 ## Preparation for connection
 
+### Main microcomputer: M5Camera
+Use of GROVE terminal.
+
+### Sub microcomputer: Arduino M0 PRO
+
+### How to connect
+
+| M5Camera | Arduino M0 PRO |
+| --- | --- |
+| GND | GND |
+| 5V | Vin |
+| SDA (13) | SDA (16) |
+| SCL (4) | SCL (17) |
+
 <img src="README/circuit_diagram.jpg" width="600">
 
 ## Find connected device addresses
