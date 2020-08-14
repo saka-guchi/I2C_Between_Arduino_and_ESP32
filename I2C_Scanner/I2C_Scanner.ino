@@ -29,12 +29,23 @@
 
 #include <Wire.h>
 
+//#define MICON_ARDUINO
+#define MICON_ESP32
+
+#ifdef MICON_ESP32
+#define PIN_SDA  4  // GPIO4
+#define PIN_SCL 13  // GPIO13
+#endif
 
 void setup()
 {
+#ifdef MICON_ESP32
+  Wire.begin(PIN_SDA,PIN_SCL);
+#else
   Wire.begin();
+#endif
 
-  Serial.begin(9600);
+  Serial.begin(115200);
   while (!Serial);             // Leonardo: wait for serial monitor
   Serial.println("\nI2C Scanner");
 }
