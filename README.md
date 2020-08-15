@@ -29,7 +29,16 @@ Original file is [here](https://playground.arduino.cc/Main/I2cScanner/)
 ## I2C Communicate between microcomputers
 1. Use [I2C_Main.ino](I2C_Main/I2C_Main.ino) and [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) that merges the following two files
 - [Master Writer/Slave Receiver](https://www.arduino.cc/en/Tutorial/MasterWriter)
+
+```[File] > [Examples] > [Wire] > [master_writer]```
+
+```[File] > [Examples] > [Wire] > [slave_receiver]```
+
 - [Master Reader/Slave Sender](https://www.arduino.cc/en/Tutorial/MasterReader)
+
+```[File] > [Examples] > [Wire] > [master_reader]```
+
+```[File] > [Examples] > [Wire] > [slave_sender]```
 
 2. Connect two microcomputers to PC.
 
@@ -38,7 +47,7 @@ Original file is [here](https://playground.arduino.cc/Main/I2cScanner/)
 | M5Camera | Arduino M0 PRO | Operation check |
 | --- | --- | --- |
 | [I2C_Main.ino](I2C_Main/I2C_Main.ino) | [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) | OK |
-| [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) | [I2C_Main.ino](I2C_Main/I2C_Main.ino) | NG (Error is output) |
+| [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) | [I2C_Main.ino](I2C_Main/I2C_Main.ino) | NG (Error output) |
 
 **ESP32 Arduino Core does not implement I2C sub functionality as of August 15, 2020.**
 
