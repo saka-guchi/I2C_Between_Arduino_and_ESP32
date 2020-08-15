@@ -1,6 +1,7 @@
 # I2C_Between_Arduino_and_ESP32
 I2C communication between Arduino and ESP32 (ex. M5Camera).
 
+
 ## Preparation for connection
 
 ### Main microcomputer: M5Camera
@@ -40,9 +41,17 @@ Original file is [here](https://playground.arduino.cc/Main/I2cScanner/)
 
 ```[File] > [Examples] > [Wire] > [slave_sender]```
 
-2. Connect two microcomputers to PC.
+2. Edit the microcomputer type of code.
 
-3. Upload and check the behavior on the serial monitor
+If you use Arduino, comment out the line below.
+
+```
+#define MICON_ESP32              // undefined if Arduino
+```
+
+3. Connect two microcomputers to PC.
+
+4. Upload and check the behavior on the serial monitor
 
 | M5Camera | Arduino M0 PRO | Operation check |
 | --- | --- | --- |
