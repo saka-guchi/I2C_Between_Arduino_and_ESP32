@@ -35,9 +35,13 @@ Original file is [here](https://playground.arduino.cc/Main/I2cScanner/)
 
 3. Upload and check the behavior on the serial monitor
 
-| M5Camera | Arduino M0 PRO |
-| --- | --- |
-| [I2C_Main.ino](I2C_Main/I2C_Main.ino) | [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) |
-| [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) | [I2C_Main.ino](I2C_Main/I2C_Main.ino) |
+| M5Camera | Arduino M0 PRO | Operation check |
+| --- | --- | --- |
+| [I2C_Main.ino](I2C_Main/I2C_Main.ino) | [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) | OK |
+| [I2C_Sub.ino](I2C_Sub/I2C_Sub.ino) | [I2C_Main.ino](I2C_Main/I2C_Main.ino) | NG (Error is output) |
+
+**ESP32 Arduino Core does not implement I2C sub functionality as of August 15, 2020.**
+
+If you want to implement, see https://www.arduino.cc/reference/en/libraries/esp32-i2c-slave/
 
 <img src="README/I2C_Code.png" width="600">
