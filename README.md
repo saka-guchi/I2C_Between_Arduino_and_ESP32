@@ -43,7 +43,7 @@ Original file is [here](https://playground.arduino.cc/Main/I2cScanner/)
 
 2. Edit the microcomputer type of code.
 
-If you use Arduino, comment out the line below.
+**If you use Arduino, comment out the line below.**
 
 ```
 #define MICON_ESP32              // undefined if Arduino
