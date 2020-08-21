@@ -18,6 +18,8 @@ Can be used between Arduinos.
 | SDA (13) | SDA (16) |
 | SCL (4) | SCL (17) |
 
+<img src="Fritzing/I2C_Between_Arduino_and_ESP32.jpg" width="600">
+
 <img src="README/circuit_diagram.jpg" width="600">
 
 ## I2C Communicate between microcomputers
