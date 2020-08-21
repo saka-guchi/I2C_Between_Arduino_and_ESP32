@@ -11,6 +11,11 @@
 
 // #define MICON_ESP32              // undefined if Arduino
 
+#ifdef MICON_ESP32
+#   error "I2C Sub functionality is not implemented in ESP32 Arduino Core"
+#   error "If you want to implement, see https://www.arduino.cc/reference/en/libraries/esp32-i2c-slave/"
+#endif
+
 #define ADDRESS 0x8
 
 #include <Wire.h>
